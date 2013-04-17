@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particle_system name="Explode">
+	<particle_definition>
+		<element		render_data_type="ParticlePosition"				type="PE_TYPE_FLOAT3"/>
+		<element		render_data_type="ParticleLifetime"				type="PE_TYPE_FLOAT"/>
+		<element		render_data_type="ParticleTextureFrame"			type="PE_TYPE_FLOAT"/>
+		<element		render_data_type="ParticleUVTileScaleOffset"	type="PE_TYPE_FLOAT4"/>
+	</particle_definition>
+	<particle_emission rate="1">
+		<emit_box		target="ParticlePosition"			value="0 0 0"				variance="5 5 5"/>
+		<emit_point		target="ParticleLifetime"			value="2.13"/>
+		<emit_point		target="ParticleTextureFrame"		value="0"/>
+	</particle_emission>
+	<particle_animation>
+		<step			target="ParticleTextureFrame"		rate="30"/>
+		<extract_tile	target="ParticleUVTileScaleOffset"	source="ParticleTextureFrame"	divs_u="8"	divs_v="-8"/>
+		<bounding_box	source="ParticlePosition"/>
+		<count_active	source="ParticleLifetime"/>
+	</particle_animation>
+</particle_system>

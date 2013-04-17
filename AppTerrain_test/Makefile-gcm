@@ -1,0 +1,9 @@
+#sample name
+MAIN=createMesh
+#src files
+SRCS=createMesh.cpp
+#utilities
+UTIL_LIB=
+
+include ../../Makefile-common.gcm
+

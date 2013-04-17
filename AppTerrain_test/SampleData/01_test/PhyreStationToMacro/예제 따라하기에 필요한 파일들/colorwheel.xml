@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particle_system name="ColorWheel">
+	<particle_definition>
+		<element		render_data_type="ParticlePosition"							type="PE_TYPE_FLOAT3"/>
+		<element		render_data_type="ParticleVelocity"							type="PE_TYPE_FLOAT3"/>
+		<element		render_data_type="ParticleLifetime"							type="PE_TYPE_FLOAT"/>
+		<element		render_data_type="ParticleColor"							type="PE_TYPE_FLOAT4"/>
+		<element		render_data_type="ParticleSize"								type="PE_TYPE_FLOAT"/>
+		<element		render_data_type="ParticleScreenSpaceAngle"					type="PE_TYPE_FLOAT"/>
+		<element		render_data_type="ParticleScreenSpaceAngularVelocity"		type="PE_TYPE_FLOAT"/>
+	</particle_definition>
+	<particle_emission rate="20">
+		<emit_point		target="ParticlePosition"									value="0 0 0"/>
+		<emit_box		target="ParticleVelocity"									value="0 0 0"				variance="10 10 10"/>
+		<emit_box		target="ParticleLifetime"									value="5"					variance="2"/>
+		<emit_point		target="ParticleColor"										value="1 1 1 1"/>
+		<emit_point		target="ParticleSize"										value="0"/>
+		<emit_point		target="ParticleScreenSpaceAngle"							value="0"/>
+		<emit_box		target="ParticleScreenSpaceAngularVelocity"					value="0"					variance="5"/>
+	</particle_emission>
+	<particle_animation>
+		<step			target="ParticleColor"				rate="0 0 0 -0.2"/>
+		<clamp_lower	target="ParticleColor"				value="0 0 0 0"/>
+		<step			target="ParticleSize"				rate="1"/>
+		<integrate		target="ParticlePosition"			source="ParticleVelocity"/>
+		<integrate		target="ParticleScreenSpaceAngle"	source="ParticleScreenSpaceAngularVelocity"/>
+		<bounding_box	source="ParticlePosition"/>
+		<count_active	source="ParticleLifetime"/>
+	</particle_animation>
+</particle_system>

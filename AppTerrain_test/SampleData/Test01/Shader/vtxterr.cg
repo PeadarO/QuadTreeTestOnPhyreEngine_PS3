@@ -1,0 +1,27 @@
+/* SCE CONFIDENTIAL
+PhyreEngine(TM) Package 2.6.0
+* Copyright (C) 2009 Sony Computer Entertainment Inc.
+* All Rights Reserved.
+*/
+ 
+struct OUTPUT
+{
+	float4 pos	: POSITION;
+	float2 t0	: TEXCOORD0;
+   	float3 eye	: TEXCOORD1;
+};
+
+OUTPUT main(float3 position : POSITION,
+			float2 texCoord : TEXCOORD0,
+			uniform float3 eyePositionWS,
+			uniform float4x4 Model,
+			uniform float4x4 ModelViewProj)
+{
+	OUTPUT OUT;
+	OUT.pos = mul(ModelViewProj, float4(position.xyz, 1));
+	OUT.t0 = texCoord;
+	float3 worldPos = mul(Model, float4(position.xyz, 1)).xyz;
+   	OUT.eye = eyePositionWS - worldPos;
+
+	return OUT;
+}

@@ -1,0 +1,1 @@
+"%SCE_PSSG%\Tools\PhyreLevelEditor\PhyreLevelEditor.exe" -offline -in="%SCE_PSSG%\Scenes\Terrain\Workspace\level.plv" -out="%SCE_PSSG%\Samples\Advanced\terrainMesh\SampleData" -quality=1.0

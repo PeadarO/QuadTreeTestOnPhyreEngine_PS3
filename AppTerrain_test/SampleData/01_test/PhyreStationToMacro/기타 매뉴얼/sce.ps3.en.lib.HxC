@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE HelpCollection>
+<HelpCollection
+  DTDVersion="1.0"
+  Id=""
+  FileVersion="0.0.0.0"
+  LangId=""
+  Font=""
+  FontSize=""
+  Charset=""
+  Title="Libraries"
+  Copyright="">
+
+  <TOCDef File="sce.ps3.en.lib.HxT"/>
+
+  <ItemMoniker Name="!DefaultFullTextSearch" ProgId="HxDs.HxFullTextSearch" InitData="FTS"/>
+  <ItemMoniker Name="!DefaultAssociativeIndex" ProgId="HxDs.HxIndex" InitData="A"/>
+  <ItemMoniker Name="!DefaultContextWindowIndex" ProgId="HxDs.HxIndex" InitData="F"/>
+  <ItemMoniker Name="!DefaultKeywordIndex" ProgId="HxDs.HxIndex" InitData="K"/>
+  <ItemMoniker Name="!DefaultNamedUrlIndex" ProgId="HxDs.HxIndex" InitData="NamedUrlIndex"/>
+  <ItemMoniker Name="!DefaultTOC" ProgId="HxDs.HxHierarchy" InitData="sce"/>
+
+  <ToolData Name="MSVHWLogLevel" Value="3"/>
+  <ToolData Name="MSVHWLogFile" Value="sce.log"/>
+  <ToolData Name="MSVHWNamespace" Value="sce"/>
+  <ToolData Name="FAR.NamespaceDesc" Value="Sony Computer Entertainment"/>
+  <ToolData Name="FAR.IncBuildNumber" Value="0"/>
+  <ToolData Name="MSVHWUniqueID" Value="sce"/>
+  <ToolData Name="FAR.CommandLine" Value="C:\Program Files\Helpware\FAR\FAR.exe"/>
+  <ToolData Name="FAR.CommandLineArgs" Value="ms-help://$NAMESPACE"/>
+</HelpCollection>

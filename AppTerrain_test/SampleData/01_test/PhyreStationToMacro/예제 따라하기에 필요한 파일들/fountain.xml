@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particle_system name="Fountain">
+	<particle_definition>
+		<element		render_data_type="ParticlePosition"	type="PE_TYPE_FLOAT3"/>
+    <element		render_data_type="ParticleQuadColor"	type="PE_TYPE_FLOAT4"/>
+    <element		render_data_type="ParticleVelocity"	type="PE_TYPE_FLOAT3"/>
+		<element		render_data_type="ParticleLifetime"	type="PE_TYPE_FLOAT2"/>
+		<element		render_data_type="ParticleColor"	type="PE_TYPE_FLOAT4"/>
+	</particle_definition>
+	<particle_emission rate="20">
+		<emit_point		target="ParticlePosition"			value="0 0 0"/>
+		<emit_cone		target="ParticleVelocity"			dir="0 1 0"					angle="0.8" radius="20"/>
+		<emit_line		target="ParticleLifetime"			start="3 3"					end="7 7"/>
+    <emit_box     target="ParticleQuadColor" value="0.5 0.5 0.5 0.0" variance="0.5 0.5 0.5 0.0"/>
+	</particle_emission>
+	<particle_animation>
+    <interp_bezier target="ParticleColor" source="ParticleLifetime" tscale="1" toffset="0" sourceComponent="2" t0="0 0 0 0" t1="0 0 0 2" t2="0 0 0 2" t3="0 0 0 0"/>
+    <linear_combination target="ParticleColor" source="ParticleQuadColor" targetScale="1" sourceScale="1"/>
+		<integrate		target="ParticlePosition"			source="ParticleVelocity"/>
+		<forcefield		target="ParticleVelocity"/>
+		<collide_plane	position="ParticlePosition"			velocity="ParticleVelocity"/>
+		<bounding_box	source="ParticlePosition"/>
+		<count_active	source="ParticleLifetime"/>
+	</particle_animation>
+	<particle_sort key="ParticlePosition" dir="CAMERA_DEPTH_INC">
+		<sort_mapstream in="ParticlePosition"				out="ParticlePosition"/>
+		<sort_mapstream in="ParticleColor"					out="ParticleColor"/>
+		<sort_mapstream in="ParticleLifetime"				out="ParticleLifetime"/>
+	</particle_sort>
+</particle_system>

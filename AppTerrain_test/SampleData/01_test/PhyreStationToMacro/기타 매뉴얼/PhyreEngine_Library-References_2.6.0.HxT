@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE HelpTOC>
+<HelpTOC
+   DTDVersion="1.0"
+   Id=""
+   FileVersion="1.0"
+   LangId="1033"
+   Font=""
+   FontSize="8"
+   Charset="0"
+   ParentNodeIcon="Book"
+   IconFile=""
+   PluginStyle="Hierarchical"
+   PluginTitle="PhyreEngine(tm) 2.6.0 Library References">
+
+   <HelpTOCNode NodeType="TOC" Url="PhyreEngine_Core_Library-Reference"/>
+   <HelpTOCNode NodeType="TOC" Url="PhyreEngine_Utility_Libraries-Reference"/>
+   <ToolData Name="MSTOCEXPST" Value="Expanded"/>
+   <ToolData Name="MSTOCMRUDIR" Value="C:\Program Files\SCE\Help2Docs\"/>
+</HelpTOC>

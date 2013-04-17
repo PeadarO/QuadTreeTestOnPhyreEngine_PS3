@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particle_system name="GeometryParticle">
+	<particle_definition>
+		<element			render_data_type="ParticlePosition"						type="PE_TYPE_FLOAT3"/>
+		<element			render_data_type="ParticleVelocity"						type="PE_TYPE_FLOAT3"/>
+		<element			render_data_type="ParticleLifetime"						type="PE_TYPE_FLOAT"/>
+		<element			render_data_type="ParticleLocalSpaceQuat"				type="PE_TYPE_FLOAT4"/>
+		<element			render_data_type="ParticleLocalSpaceQuatVelocity"		type="PE_TYPE_FLOAT4"/>
+	</particle_definition>
+	<particle_emission rate="20">
+		<emit_point			target="ParticlePosition"							value="0 0 0"/>
+		<emit_box			target="ParticleVelocity"							value="0 10 0"				variance="10 10 10"/>
+		<emit_box			target="ParticleLifetime"							value="5"					variance="2"/>
+		<emit_normalized	target="ParticleLocalSpaceQuat"						value="0 0 0 1" radius="1"/>
+		<emit_normalized	target="ParticleLocalSpaceQuatVelocity"				radius="1"/>
+	</particle_emission>
+	<particle_animation>
+		<integrate			target="ParticlePosition"							source="ParticleVelocity"/>
+		<quat_integrate		target="ParticleLocalSpaceQuat"						source="ParticleLocalSpaceQuatVelocity"/>
+		<forcefield			target="ParticleVelocity"/>
+		<collide_plane		position="ParticlePosition"							velocity="ParticleVelocity"/>
+		<bounding_box		source="ParticlePosition"/>
+		<count_active		source="ParticleLifetime"/>
+	</particle_animation>
+</particle_system>

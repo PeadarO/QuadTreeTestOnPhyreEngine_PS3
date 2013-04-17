@@ -1,0 +1,1042 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="PS3DebugGCM|Win32">
+      <Configuration>PS3DebugGCM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3DebugOptGCM|Win32">
+      <Configuration>PS3DebugOptGCM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3DebugOptPSGL|Win32">
+      <Configuration>PS3DebugOptPSGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3DebugPSGL|Win32">
+      <Configuration>PS3DebugPSGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3ProfileGCM|Win32">
+      <Configuration>PS3ProfileGCM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3ProfilePSGL|Win32">
+      <Configuration>PS3ProfilePSGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3ReleaseGCM|Win32">
+      <Configuration>PS3ReleaseGCM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3ReleasePSGL|Win32">
+      <Configuration>PS3ReleasePSGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3SNCDebugGCM|Win32">
+      <Configuration>PS3SNCDebugGCM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3SNCDebugOptGCM|Win32">
+      <Configuration>PS3SNCDebugOptGCM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3SNCDebugOptPSGL|Win32">
+      <Configuration>PS3SNCDebugOptPSGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3SNCDebugPSGL|Win32">
+      <Configuration>PS3SNCDebugPSGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3SNCProfileGCM|Win32">
+      <Configuration>PS3SNCProfileGCM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3SNCProfilePSGL|Win32">
+      <Configuration>PS3SNCProfilePSGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3SNCReleaseGCM|Win32">
+      <Configuration>PS3SNCReleaseGCM</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="PS3SNCReleasePSGL|Win32">
+      <Configuration>PS3SNCReleasePSGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win32DebugOpt|Win32">
+      <Configuration>Win32DebugOpt</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win32Debug|Win32">
+      <Configuration>Win32Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Win32Release|Win32">
+      <Configuration>Win32Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DAE8D13A-C1CF-4214-B7BD-F5D152F2A68C}</ProjectGuid>
+    <RootNamespace>createMesh</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'">debugobj_sn\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'">debugoptobj_sn\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'">profileobj_sn\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'">releaseobj_sn\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'">debugobj-gcm_sn\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'">debugoptobj-gcm_sn\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'">profileobj-gcm_sn\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'">releaseobj-gcm_sn\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'">debugobj_snc\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'">debugoptobj_snc\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'">profileobj_snc\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'">releaseobj_snc\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'">debugobj-gcm_snc\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'">debugoptobj-gcm_snc\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'">profileobj-gcm_snc\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'">.\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'">releaseobj-gcm_snc\</IntDir>
+    <ExtensionsToDeleteOnClean Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'">*.o%3b*.ilk%3b*.pdb%3b*.tlb%3b*.tli%3b*.tlh%3b*.tmp%3b*.rsp%3b*.d%3b*.mak%3b"$(TargetPath)"</ExtensionsToDeleteOnClean>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'">false</GenerateManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;$(SCE_PS3_ROOT)/target/common/include/vectormath;$(CG_INC_PATH);$(DXSDK_DIR)/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)D.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(CG_LIB_PATH);$(DXSDK_DIR)/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)D.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;$(SCE_PS3_ROOT)/target/common/include/vectormath;$(CG_INC_PATH);$(DXSDK_DIR)/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(CG_LIB_PATH);$(DXSDK_DIR)/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;$(SCE_PS3_ROOT)/target/common/include/vectormath;$(CG_INC_PATH);$(DXSDK_DIR)/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32;NDEBUG;_DEBUGOPT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)DO.exe</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(CG_LIB_PATH);$(DXSDK_DIR)/Lib/x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/CompileDebug" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_REENTRANT;_SPU;PSGL;_DEBUG;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).sdelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/LinkSampleDebugPSGL"
+"C:\PhyreEngine/Lib/libPSSGIntersectMesh_debug.a"
+"C:\PhyreEngine/Lib/libPSSGMesh_debug.a"
+"C:\PhyreEngine/Lib/libPSSGUtilTraversal_debug.a"
+"C:\PhyreEngine/Lib/libPSSGDebug_debug.a"
+"C:\PhyreEngine/Lib/libPSSGText_debug.a"
+"C:\PhyreEngine/Lib/libPSSGIndex_debug.a"
+"C:\PhyreEngine/Lib/libPSSGUnique_debug.a"
+"C:\PhyreEngine/Lib/libPSSGProperties_debug.a"
+"C:\PhyreEngine/Lib/libPSSGNetwork_debug.a"
+"C:\PhyreEngine/Lib/libNvTriStrip_debug.a"
+"C:\PhyreEngine/Lib/libfw_debug.a" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName).sdelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(SCE_PS3_ROOT)/target/ppu/lib/PSGL/RSX/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/CompileDebugOpt" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_REENTRANT;_SPU;PSGL;NDEBUG;_DEBUGOPT;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).sdoelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/LinkSampleDebugOptPSGL"
+"C:\PhyreEngine/Lib/libPSSGIntersectMesh_debug.a"
+"C:\PhyreEngine/Lib/libPSSGMesh_debug.a"
+"C:\PhyreEngine/Lib/libPSSGUtilTraversal_debug.a"
+"C:\PhyreEngine/Lib/libPSSGDebug_debug.a"
+"C:\PhyreEngine/Lib/libPSSGText_debug.a"
+"C:\PhyreEngine/Lib/libPSSGIndex_debug.a"
+"C:\PhyreEngine/Lib/libPSSGUnique_debug.a"
+"C:\PhyreEngine/Lib/libPSSGProperties_debug.a"
+"C:\PhyreEngine/Lib/libPSSGNetwork_debug.a"
+"C:\PhyreEngine/Lib/libNvTriStrip_debug.a"
+"C:\PhyreEngine/Lib/libfw_debug.a" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName).sdoelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(SCE_PS3_ROOT)/target/ppu/lib/PSGL/RSX/opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/CompileProfile" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_REENTRANT;_SPU;PSGL;NDEBUG;__CELLOS_LV2__;PSSG_DO_PROFILE;PSSG_DO_SPU_PROFILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).spelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/LinkSampleProfilePSGL" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName).spelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(SCE_PS3_ROOT)/target/ppu/lib/PSGL/RSX/ultra-opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/CompileRelease" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_REENTRANT;_SPU;PSGL;NDEBUG;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).self?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/LinkSampleReleasePSGL"
+"C:\PhyreEngine/Lib/libPSSGIntersectMesh.a"
+"C:\PhyreEngine/Lib/libPSSGMesh.a"
+"C:\PhyreEngine/Lib/libPSSGUtilTraversal.a"
+"C:\PhyreEngine/Lib/libPSSGDebug.a"
+"C:\PhyreEngine/Lib/libPSSGText.a"
+"C:\PhyreEngine/Lib/libPSSGIndex.a"
+"C:\PhyreEngine/Lib/libPSSGUnique.a"
+"C:\PhyreEngine/Lib/libPSSGProperties.a"
+"C:\PhyreEngine/Lib/libPSSGNetwork.a"
+"C:\PhyreEngine/Lib/libNvTriStrip.a"
+"C:\PhyreEngine/Lib/libfw.a"     %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName).self</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(SCE_PS3_ROOT)/target/ppu/lib/PSGL/RSX/ultra-opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/Unself.bat" $(OutDir)$(TargetName).self $(OutDir)$(TargetName).elf
+call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/CompileDebug" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_REENTRANT;_SPU;_DEBUG;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).sdelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/LinkSampleDebugGCM"
+"C:\PhyreEngine/Lib/libPSSGIntersectMesh_debug.a"
+"C:\PhyreEngine/Lib/libPSSGMesh_debug.a"
+"C:\PhyreEngine/Lib/libPSSGUtilTraversal_debug.a"
+"C:\PhyreEngine/Lib/libPSSGDebug_debug.a"
+"C:\PhyreEngine/Lib/libPSSGText_debug.a"
+"C:\PhyreEngine/Lib/libPSSGIndex_debug.a"
+"C:\PhyreEngine/Lib/libPSSGUnique_debug.a"
+"C:\PhyreEngine/Lib/libPSSGProperties_debug.a"
+"C:\PhyreEngine/Lib/libPSSGNetwork_debug.a"
+"C:\PhyreEngine/Lib/libNvTriStrip_debug.a"
+"C:\PhyreEngine/Lib/libfw_debug.a" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>-lPSSGTGA_debug;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)GCM.sdelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/CompileDebugOpt" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_REENTRANT;_SPU;NDEBUG;_DEBUGOPT;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).sdoelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/LinkSampleDebugOptGCM"
+"C:\PhyreEngine/Lib/libPSSGIntersectMesh_debug.a"
+"C:\PhyreEngine/Lib/libPSSGMesh_debug.a"
+"C:\PhyreEngine/Lib/libPSSGUtilTraversal_debug.a"
+"C:\PhyreEngine/Lib/libPSSGDebug_debug.a"
+"C:\PhyreEngine/Lib/libPSSGText_debug.a"
+"C:\PhyreEngine/Lib/libPSSGIndex_debug.a"
+"C:\PhyreEngine/Lib/libPSSGUnique_debug.a"
+"C:\PhyreEngine/Lib/libPSSGProperties_debug.a"
+"C:\PhyreEngine/Lib/libPSSGNetwork_debug.a"
+"C:\PhyreEngine/Lib/libNvTriStrip_debug.a"
+"C:\PhyreEngine/Lib/libfw_debug.a" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)GCM.sdoelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/CompileProfile" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_REENTRANT;_SPU;NDEBUG;__CELLOS_LV2__;PSSG_DO_PROFILE;PSSG_DO_SPU_PROFILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).spelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/LinkSampleProfileGCM" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)GCM.spelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/CompileRelease" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;_REENTRANT;_SPU;NDEBUG;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).self?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/GCC/LinkSampleReleaseGCM" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)GCM.self</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/Unself.bat" $(OutDir)$(TargetName).self $(OutDir)$(TargetName).elf
+call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/CompileDebug" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;__SNC__;_SPU;_REENTRANT;PSGL;_DEBUG;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).sdelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/LinkSampleDebugPSGL" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)SNC.sdelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(SCE_PS3_ROOT)/target/ppu/lib/PSGL/RSX/debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/CompileDebugOpt" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;__SNC__;_SPU;_REENTRANT;PSGL;NDEBUG;_DEBUGOPT;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).sdoelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/LinkSampleDebugOptPSGL" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)SNC.sdoelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(SCE_PS3_ROOT)/target/ppu/lib/PSGL/RSX/opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/CompileProfile" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;__SNC__;_SPU;_REENTRANT;PSGL;NDEBUG;__CELLOS_LV2__;PSSG_DO_PROFILE;PSSG_DO_SPU_PROFILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).spelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/LinkSampleProfilePSGL" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)SNC.spelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(SCE_PS3_ROOT)/target/ppu/lib/PSGL/RSX/ultra-opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/CompileRelease" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;__SNC__;_SPU;_REENTRANT;PSGL;NDEBUG;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).self?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/LinkSampleReleasePSGL" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)SNC.self</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;$(SCE_PS3_ROOT)/target/ppu/lib/PSGL/RSX/ultra-opt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/Unself.bat" $(OutDir)$(TargetName).self $(OutDir)$(TargetName).elf
+call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/CompileDebug" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;__SNC__;_SPU;_REENTRANT;_DEBUG;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).sdelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/LinkSampleDebugGCM" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)GCMSNC.sdelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/CompileDebugOpt" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;__SNC__;_SPU;_REENTRANT;NDEBUG;_DEBUGOPT;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).sdoelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/LinkSampleDebugOptGCM" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)GCMSNC.sdoelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/CompileProfile" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;__SNC__;_SPU;_REENTRANT;NDEBUG;__CELLOS_LV2__;PSSG_DO_PROFILE;PSSG_DO_SPU_PROFILE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).spelf?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/LinkSampleProfileGCM" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)GCMSNC.spelf</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'">
+    <ClCompile>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/CompileRelease" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SCE_PSSG)/Include;$(SCE_PSSG)/External;$(SCE_PSSG)/utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SN_TARGET_PS3;__SNC__;_SPU;_REENTRANT;NDEBUG;__CELLOS_LV2__;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)%(Filename).o</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ForcedUsingFiles>?DbgSaveProj?DbgFilePath=$(TargetDir)$(TargetName).self?FileServDir=%(RootDir)%(Directory);%(ForcedUsingFiles)</ForcedUsingFiles>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>%40"$(SCE_PSSG)/Build/SNC/LinkSampleReleaseGCM" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)GCMSNC.self</OutputFile>
+      <AdditionalLibraryDirectories>$(SCE_PSSG)/Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+    <PostBuildEvent>
+      <Message>Performing Post Build Event...</Message>
+      <Command>call "$(SCE_PSSG)/Build/Unself.bat" $(OutDir)$(TargetName).self $(OutDir)$(TargetName).elf
+call "$(SCE_PSSG)/Build/CreateSCE_PSSGFile.bat"
+move $(OutDir)$(ProjectName).mak $(IntDir)
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ApplicationMain.cpp" />
+    <ClCompile Include="SpaceTree.cpp" />
+    <ClCompile Include="Tri.cpp" />
+    <ClCompile Include="TriContainer.cpp" />
+    <ClCompile Include="ManagerObjects.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="ProcessorObjects.cpp" />
+    <ClCompile Include="DebugingText.cpp" />
+    <ClCompile Include="DrawForDebug.cpp" />
+    <ClCompile Include="OutputText.cpp" />
+    <ClCompile Include="Text3D.cpp" />
+    <ClCompile Include="BoundaryVolume.cpp" />
+    <ClCompile Include="TerrainMesh.cpp" />
+    <ClCompile Include="TerrainTest.cpp" />
+    <ClCompile Include="CustomTime.cpp" />
+    <ClCompile Include="ManagerNavi.cpp" />
+    <ClCompile Include="NaviCell.cpp" />
+    <ClCompile Include="ProcessorNavi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApplicationMain.h" />
+    <ClInclude Include="SpaceTree.h" />
+    <ClInclude Include="Tri.h" />
+    <ClInclude Include="TriContainer.h" />
+    <ClInclude Include="CommonApp.h" />
+    <ClInclude Include="CommonMath.h" />
+    <ClInclude Include="CommonSingleton.h" />
+    <ClInclude Include="ManagerObjects.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ProcessorObjects.h" />
+    <ClInclude Include="DebugingText.h" />
+    <ClInclude Include="DrawForDebug.h" />
+    <ClInclude Include="OutputText.h" />
+    <ClInclude Include="Text3D.h" />
+    <ClInclude Include="BoundaryVolume.h" />
+    <ClInclude Include="TerrainMesh.h" />
+    <ClInclude Include="TerrainTest.h" />
+    <ClInclude Include="CustomTime.h" />
+    <ClInclude Include="ManagerNavi.h" />
+    <ClInclude Include="NaviCell.h" />
+    <ClInclude Include="ProcessorNavi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.txt" />
+    <CustomBuild Include="vsi.nul">
+      <FileType>Document</FileType>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3DebugGCM|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptGCM|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3DebugOptPSGL|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3DebugPSGL|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3ProfileGCM|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3ProfilePSGL|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3ReleaseGCM|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3ReleasePSGL|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugGCM|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptGCM|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugOptPSGL|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3SNCDebugPSGL|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfileGCM|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3SNCProfilePSGL|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleaseGCM|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'">echo &gt;nul
+</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='PS3SNCReleasePSGL|Win32'">$(IntDir)vsi.out;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32DebugOpt|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Win32Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

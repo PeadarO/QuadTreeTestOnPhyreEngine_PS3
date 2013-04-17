@@ -1,0 +1,50 @@
+/* SCE CONFIDENTIAL
+PhyreEngine(TM) Package 2.6.0
+* Copyright (C) 2009 Sony Computer Entertainment Inc.
+* All Rights Reserved.
+*/
+ 
+struct IN
+{
+	float2	texcoord0		: TEXCOORD0;
+	float3	eye				: TEXCOORD1;
+};
+
+float4 main(
+	uniform sampler2D	tmap1,				// 拡散マップ
+	uniform sampler2D	tmap2,				// ワールド空間法線マップ
+	uniform sampler2D	tmap3,				// アンビエント、スペキュラ、シャドウ
+	uniform float3		lightDirectionWS,	// ワールド空間での光源方向
+	const IN			input) : COLOR
+{
+	float2 tc = input.texcoord0;
+   
+   	//  ワールド空間法線
+   	half3 s = h4tex2D(tmap2, tc).xyz;
+   	float3 n = normalize(s.xyz * 2.0f - 1.0f);
+   	float3 light = normalize(lightDirectionWS);
+   	float3 eye = normalize(input.eye);
+   
+   	float NdotL = dot(n, light);
+	float NdotLv2 = saturate((NdotL + 0.2) * 10);
+   	float3 h = normalize(light + eye);
+   
+	float3 litVal = tex2D(tmap3, tc).xyz;				// x - シャドウ、y - アンビエントオクルージョン、z - スペキュラ
+	float specular = litVal.z;
+	float ambientOcclusion = litVal.y;
+	float shadowMultiplier = litVal.x;
+
+   	float NdotH = dot(n, h);
+	NdotH = max(NdotH, 0.0f);
+	NdotH = pow(NdotH, 15.0) * shadowMultiplier;
+	NdotL = max(NdotL, 0.0f) * shadowMultiplier;
+
+   	float3 c = tex2D(tmap1, tc).xyz;
+	float3 lit = c * float3(1, 1, 1);
+   	float3 dark = c * float3(0.1, 0.1, 0.3);
+
+   	float3 color = (lerp(dark, lit, NdotL) + float3(NdotH * NdotLv2 * specular)) * ambientOcclusion;
+	color = 1 - exp(-2 * color);
+
+   	return float4(color, 1.0);
+}

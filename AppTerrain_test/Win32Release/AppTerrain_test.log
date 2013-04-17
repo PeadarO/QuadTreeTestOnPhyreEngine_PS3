@@ -1,0 +1,47 @@
+﻿빌드 시작: 2013-04-16 오후 5:35:37
+     1>2 노드의 "D:\DonLee\programming_\01.Practices_\PhyreEngineTest\110127_DonseokTest\AppTerrain_test\AppTerrain_test.vcxproj" 프로젝트(rebuild 대상)입니다.
+     1>InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Win32Release\AppTerrain_test.unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I/Include /I/External /I/utilities /I/target/common/include/vectormath /I"C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\/Include" /Zi /nologo /W4 /WX- /O2 /Oy- /D _WIN32 /D NDEBUG /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Win32Release\\" /Fd"Win32Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ApplicationMain.cpp SpaceTree.cpp Tri.cpp TriContainer.cpp ManagerObjects.cpp Object.cpp ProcessorObjects.cpp DebugingText.cpp DrawForDebug.cpp OutputText.cpp Text3D.cpp BoundaryVolume.cpp TerrainMesh.cpp TerrainTest.cpp CustomTime.cpp ManagerNavi.cpp NaviCell.cpp ProcessorNavi.cpp
+         ApplicationMain.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\ApplicationMain.h(11): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         SpaceTree.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\TriContainer.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         Tri.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\Tri.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         TriContainer.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\TriContainer.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         ManagerObjects.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\Object.h(8): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         Object.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\Object.h(8): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         ProcessorObjects.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\BoundaryVolume.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         DebugingText.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\DebugingText.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         DrawForDebug.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\DrawForDebug.h(7): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         OutputText.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\OutputText.h(5): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         Text3D.cpp
+         BoundaryVolume.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\BoundaryVolume.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         TerrainMesh.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\TerrainMesh.h(4): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSGTerrain/PSSGTerrain.h': No such file or directory
+         TerrainTest.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\TerrainTest.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         CustomTime.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\CustomTime.h(6): fatal error C1083: 포함 파일을 열 수 없습니다. 'fw/include/FWTime.h': No such file or directory
+         ManagerNavi.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\ManagerNavi.h(10): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         NaviCell.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\NaviCell.h(8): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         ProcessorNavi.cpp
+     1>d:\donlee\programming_\01.practices_\phyreenginetest\110127_donseoktest\appterrain_test\ProcessorNavi.h(3): fatal error C1083: 포함 파일을 열 수 없습니다. 'PSSG.h': No such file or directory
+         코드를 생성하고 있습니다...
+     1>"D:\DonLee\programming_\01.Practices_\PhyreEngineTest\110127_DonseokTest\AppTerrain_test\AppTerrain_test.vcxproj" 프로젝트를 빌드했습니다(rebuild 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:02.41

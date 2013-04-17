@@ -1,0 +1,40 @@
+/* SCE CONFIDENTIAL
+PhyreEngine(TM) Package 2.6.0
+* Copyright (C) 2009 Sony Computer Entertainment Inc.
+* All Rights Reserved.
+*/
+ 
+//
+// パーティクル頂点シェーダの例
+//
+
+struct IN
+{
+	float4	ParticleQuadPosition	: POSITION;
+	float4	ParticleQuadColor		: COLOR0;
+	float2	ST						: TEXCOORD0;
+};
+
+struct OUT
+{
+	float4	clipSpace			: POSITION;
+	float4	color				: COLOR0;
+	float2	tc					: TEXCOORD0;
+};
+
+OUT main(
+	in IN input,
+	uniform float4x4 ModelViewProj)
+{
+	OUT output;
+	
+	float4 position = float4(input.ParticleQuadPosition.xyz, 1.0f);
+
+	// ポイントをclipSpaceに変換
+	output.clipSpace = mul(ModelViewProj, position);
+
+	output.tc = input.ST;
+	output.color = input.ParticleQuadColor;
+
+	return output;
+}

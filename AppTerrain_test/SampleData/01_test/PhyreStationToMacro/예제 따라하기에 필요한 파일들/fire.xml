@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<particle_system name="Fire">
+	<particle_definition>
+		<element		render_data_type="ParticlePosition"	type="PE_TYPE_FLOAT3"/>
+		<element		render_data_type="ParticleVelocity"	type="PE_TYPE_FLOAT3"/>
+		<element		render_data_type="ParticleLifetime"	type="PE_TYPE_FLOAT"/>
+		<element		render_data_type="ParticleColor"	type="PE_TYPE_FLOAT4"/>
+	</particle_definition>
+	<particle_emission rate="20">
+		<emit_line		target="ParticlePosition"			start="-10 0 0"				end="10 0 0"/>
+		<emit_box		target="ParticleVelocity"			value="0 0 0"				variance="2 0 2"/>
+		<emit_box		target="ParticleLifetime"			value="5"					variance="2"/>
+		<emit_box		target="ParticleColor"				value="0.3 0.1 0.0 0.05"	variance="0.2 0.15 0.0 0.05"/>
+	</particle_emission>
+	<particle_animation>
+		<step			target="ParticleColor"				rate="0.015 0.05 0.0 0.05"/>
+		<integrate		target="ParticlePosition"			source="ParticleVelocity"/>
+		<forcefield		target="ParticleVelocity"/>
+		<bounding_box	source="ParticlePosition"/>
+		<count_active	source="ParticleLifetime"/>
+	</particle_animation>
+</particle_system>

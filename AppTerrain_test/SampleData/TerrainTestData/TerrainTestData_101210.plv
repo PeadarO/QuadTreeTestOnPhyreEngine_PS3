@@ -1,0 +1,14 @@
+<file_workspace>
+  <asset>
+    <application_name>PhyreLevelEditor</application_name>
+    <application_version>1.4.0.0</application_version>
+  </asset>
+  <workspace name="TerrainTestData_101210">
+    <terrain>
+      <file>.\pan1.obj</file>
+      <instance>
+        <name><![CDATA[pan1_0]]></name>
+      </instance>
+    </terrain>
+  </workspace>
+</file_workspace>

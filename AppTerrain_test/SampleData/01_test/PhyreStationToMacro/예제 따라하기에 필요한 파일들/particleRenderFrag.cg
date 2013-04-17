@@ -1,0 +1,22 @@
+/* SCE CONFIDENTIAL
+PhyreEngine(TM) Package 2.6.0
+* Copyright (C) 2009 Sony Computer Entertainment Inc.
+* All Rights Reserved.
+*/
+ 
+//
+// フラグメントシェーダの例
+//
+
+struct IN
+{
+	float2 uv			: TEXCOORD0;
+	float4 color		: COLOR0;
+};
+
+float4 main(
+		IN input,
+		uniform sampler2D diffuse) : COLOR
+{
+	return tex2D(diffuse, input.uv) * input.color;
+}
